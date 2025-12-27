@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.1s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+
+.header .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8b0000, #660000);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(139,0,0,0.4);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header .logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,0,0,0.6);
+    background: linear-gradient(45deg, #b30000, #800000);
+}
+
+/* Контент */
+.promo {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 35px;
+    border-radius: 15px;
+    border-left: 5px solid #8b0000;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(139,0,0,0.2);
+}
+
+.info p {
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+    
+    .info {
+        padding: 25px;
+        margin: 20px 15px;
+    }
+    
+    .info p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 0 10px;
+    }
+    
+    .promo {
+        padding: 20px 10px;
+    }
+    
+    .info {
+        padding: 20px;
+    }
+    
+    .info p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
