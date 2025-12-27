@@ -68,7 +68,7 @@ logo.addEventListener('click', function(event) {
                 text-shadow: 0 0 10px #ffffff;
                 animation: fadeInOut 1s infinite alternate;
             ">
-                Вас напугала Вилена!
+                Вас напугал григорий!
             </p>
             
             <!-- Таймер закрытия -->
